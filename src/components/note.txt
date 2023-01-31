@@ -1,0 +1,93 @@
+api call in js
+..............
+
+AJAX
+
+-XMLhttp
+-fetch
+-asynch await
+
+
+useEfect hook ngOnInit nu  pakaram
+
+
+
+
+redierection in react
+.....................
+
+react-router-dom
+
+     npm i react-router-dom
+
+
+import {
+     BrowserRouter as Router - all routing need component
+     ,Routes                 - to set paths for each component
+     ,Route                  - morethan one path
+      } from 'react-router-dom';
+
+
+
+
+useParams - hook used to access params from component url
+
+
+REDUX
+.....
+
+coupling   -  many connections between parent and child component
+
+props drilling - i coupling if any intermediate component have any errors all other childs will not work
+
+
+to avoid props drilling we need to reduce couplingand make all the component independent
+
+of this react introduced a new technology - state management technology - REDUX
+
+
+REDUX process
+.............
+
+create a new js file to keep the state . all the components can access the js file
+
+
+- te components only can access the data from the js file but they cant update the js file
+
+- Action - a file with all the logics to update the state
+- Dispatch - methord used to dispatch the logic in action file when the component need state updaton
+- Reducer - update the datas in js file according to the payload response get from action file
+
+libraries to applyb redux
+.........................
+
+1- REDUX
+2- REACT-REACT
+3- REDUX-THUNK
+
+   npm i redux react-redux redux-thunk
+
+createStore() - method in REDUX used to create store in js file
+              -2 args
+              -1 Reducer 
+              -2 middleware (used to make synchronous redux into asynchronous)
+
+applyMiddleware() - methord in REDUX to applay middleware
+
+combineReducers() - methord in REDUX used to combine all the reducers in js file
+
+
+thunk - in REDUX-THUNK used to create middleware
+
+1 create store 
+2 apply the store in index.js  
+      - provider   - it is a tag used to pass the store (react-redux)
+
+
+
+AXIOS   - module used to make http methords(api call)
+
+          -npm i axios
+
+
+useDispatch- hook used to dispatch actions in components  - react-redux 
