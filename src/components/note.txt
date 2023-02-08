@@ -91,3 +91,6 @@ AXIOS   - module used to make http methords(api call)
 
 
 useDispatch- hook used to dispatch actions in components  - react-redux 
+
+
+to acces datas from store to component  - useSelector - hook
